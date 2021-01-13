@@ -12,73 +12,109 @@ body {
   min-height: 100vh; }
   @media only screen and (min-width: 1025px) and (max-width: 1382px) {
     .wrap-content {
-      min-height: 120vh; } }
+      min-height: 100vh; } }
+  @media only screen and (max-width: 1024px) {
+    .wrap-content {
+      padding-bottom: 60%; } }
 
 #landing-lgef .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0; }
+  padding: 20px 0 5px; }
+  @media only screen and (min-width: 1901px) {
+    #landing-lgef .title {
+      padding: 60px 0 30px; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+    #landing-lgef .title {
+      padding: 20px 0 5px; } }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    #landing-lgef .title {
+      padding: 10px 20px; } }
   @media only screen and (max-width: 480px) {
     #landing-lgef .title {
       padding: 30px 40px;
       box-sizing: border-box; } }
-  @media only screen and (min-width: 481px) and (max-width: 1024px) {
-    #landing-lgef .title {
-      padding: 10px 20px; } }
   #landing-lgef .title img {
-    width: 135px;
+    width: 125px;
     margin-right: 40px; }
+    @media only screen and (min-width: 1901px) {
+      #landing-lgef .title img {
+        width: 135px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+      #landing-lgef .title img {
+        width: 125px; } }
     @media only screen and (max-width: 480px) {
       #landing-lgef .title img {
         width: 66px;
         margin-right: 23px; } }
 #landing-lgef h1 {
-  width: 753px;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
-  font-size: 52px;
-  line-height: 52px;
+  font-size: 45px;
+  line-height: 45px;
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 0px; }
-  @media (max-width: 320px) {
+  @media only screen and (min-width: 1901px) {
     #landing-lgef h1 {
-      font-size: 13px;
-      line-height: 18px; } }
+      font-size: 52px;
+      line-height: 52px; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+    #landing-lgef h1 {
+      font-size: 45px;
+      line-height: 45px; } }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    #landing-lgef h1 {
+      font-size: 38px;
+      line-height: 44px; } }
   @media only screen and (max-width: 480px) {
     #landing-lgef h1 {
       font-size: 16px;
       line-height: 22px;
       margin: 0; } }
-  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+  @media (max-width: 320px) {
     #landing-lgef h1 {
-      font-size: 38px;
-      line-height: 44px; } }
+      font-size: 13px;
+      line-height: 18px; } }
 #landing-lgef .content {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 40px; }
-  @media only screen and (max-width: 480px) {
+  padding-bottom: 15px; }
+  @media only screen and (min-width: 1901px) {
     #landing-lgef .content {
-      flex-direction: column;
-      width: 80%;
-      margin: auto; } }
+      padding-bottom: 40px; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+    #landing-lgef .content {
+      padding-bottom: 15px; } }
   @media only screen and (min-width: 481px) and (max-width: 1024px) {
     #landing-lgef .content {
       flex-direction: column;
       width: 540px;
       margin: auto; } }
   @media only screen and (max-width: 480px) {
-    #landing-lgef .content > img {
-      margin-bottom: 35px;
-      width: 100%; } }
-  @media only screen and (min-width: 481px) and (max-width: 1024px) {
-    #landing-lgef .content > img {
-      margin-bottom: 35px; } }
+    #landing-lgef .content {
+      flex-direction: column;
+      width: 80%;
+      margin: auto; } }
+  #landing-lgef .content > img {
+    width: 470px; }
+    @media only screen and (min-width: 1901px) {
+      #landing-lgef .content > img {
+        width: 540px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+      #landing-lgef .content > img {
+        width: 470px; } }
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+      #landing-lgef .content > img {
+        margin-bottom: 35px; } }
+    @media only screen and (max-width: 480px) {
+      #landing-lgef .content > img {
+        margin-bottom: 35px;
+        width: 100%; } }
   #landing-lgef .content .card {
     text-decoration: none;
     background: #FFFFFF;
@@ -89,14 +125,31 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 260px;
-    height: 200px;
+    width: 230px;
+    height: 190px;
     border: none;
     transition: ease-in-out .1s all; }
     #landing-lgef .content .card:hover {
       transform: scale(1.25); }
       #landing-lgef .content .card:hover img {
-        transform: scale(1.35); }
+        transform: scale(1.25); }
+    @media only screen and (min-width: 1901px) {
+      #landing-lgef .content .card {
+        width: 260px;
+        height: 200px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+      #landing-lgef .content .card {
+        width: 230px;
+        height: 190px; } }
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+      #landing-lgef .content .card {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 20px 60px;
+        box-sizing: border-box; } }
     @media only screen and (max-width: 480px) {
       #landing-lgef .content .card {
         width: 100%;
@@ -107,15 +160,6 @@ body {
         padding: 25px 30px;
         box-sizing: border-box;
         height: auto; } }
-    @media only screen and (min-width: 481px) and (max-width: 1024px) {
-      #landing-lgef .content .card {
-        width: 100%;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        flex-direction: row;
-        justify-content: flex-start;
-        padding: 20px 60px;
-        box-sizing: border-box; } }
     #landing-lgef .content .card img {
       width: 90px;
       transition: ease-in-out .3s all; }
@@ -124,16 +168,24 @@ body {
           width: 70px; } }
     #landing-lgef .content .card#lgef-button {
       position: absolute;
-      top: 40px;
-      left: -720px;
+      top: 35px;
+      left: -610px;
       right: 0;
       margin: auto; }
-      @media only screen and (max-width: 480px) {
+      @media only screen and (min-width: 1901px) {
+        #landing-lgef .content .card#lgef-button {
+          top: 42px;
+          left: -700px; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+        #landing-lgef .content .card#lgef-button {
+          top: 35px;
+          left: -610px; } }
+      @media only screen and (min-width: 481px) and (max-width: 1024px) {
         #landing-lgef .content .card#lgef-button {
           position: static;
           order: 1;
           margin-bottom: 20px; } }
-      @media only screen and (min-width: 481px) and (max-width: 1024px) {
+      @media only screen and (max-width: 480px) {
         #landing-lgef .content .card#lgef-button {
           position: static;
           order: 1;
@@ -142,13 +194,21 @@ body {
       position: absolute;
       top: 90px;
       left: 0;
-      right: -710px;
+      right: -615px;
       margin: auto; }
-      @media only screen and (max-width: 480px) {
+      @media only screen and (min-width: 1901px) {
+        #landing-lgef .content .card#actifoot-button {
+          top: 110px;
+          right: -705px; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+        #landing-lgef .content .card#actifoot-button {
+          top: 90px;
+          right: -615px; } }
+      @media only screen and (min-width: 481px) and (max-width: 1024px) {
         #landing-lgef .content .card#actifoot-button {
           position: static;
           order: 2; } }
-      @media only screen and (min-width: 481px) and (max-width: 1024px) {
+      @media only screen and (max-width: 480px) {
         #landing-lgef .content .card#actifoot-button {
           position: static;
           order: 2; } }
@@ -180,7 +240,7 @@ body {
           margin-left: 30px;
           margin-top: 0; } }
 #landing-lgef .social-icon {
-  padding-bottom: 150px; }
+  padding-bottom: 0px; }
   #landing-lgef .social-icon h3 {
     font-family: Source Sans Pro;
     font-weight: bold;
@@ -202,29 +262,52 @@ body {
       margin: 0 15px; }
 #landing-lgef .footer-lgef {
   width: 100%;
-  background-color: #002364;
+  background-color: #fff;
   text-align: center;
-  padding: 20px 50px;
+  padding: 5px 50px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0; }
+  @media only screen and (max-width: 1024px) {
+    #landing-lgef .footer-lgef {
+      flex-direction: column;
+      padding: 15px 50px; } }
+  #landing-lgef .footer-lgef .left img {
+    width: 240px; }
+    @media only screen and (min-width: 1901px) {
+      #landing-lgef .footer-lgef .left img {
+        width: 260px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+      #landing-lgef .footer-lgef .left img {
+        width: 240px; } }
+    @media only screen and (max-width: 1024px) {
+      #landing-lgef .footer-lgef .left img {
+        margin-bottom: 20px; } }
   #landing-lgef .footer-lgef p {
     font-family: Source Sans Pro;
     font-weight: normal;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 20px;
     text-align: center;
-    color: #FFFFFF;
+    color: #333333;
     margin: 0; }
+    @media only screen and (min-width: 1901px) {
+      #landing-lgef .footer-lgef p {
+        font-size: 24px;
+        line-height: 30px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+      #landing-lgef .footer-lgef p {
+        font-size: 18px;
+        line-height: 20px; } }
     #landing-lgef .footer-lgef p a {
       text-decoration: underline;
-      color: #fff; }
+      color: #1f8efa; }
       #landing-lgef .footer-lgef p a:hover {
-        color: #fff; }
-      #landing-lgef .footer-lgef p a img {
-        width: 28.51px;
-        margin-left: 10px; }
+        color: #1f8efa; }
 
 /*# sourceMappingURL=landing-style.css.map */
