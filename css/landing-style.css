@@ -129,10 +129,6 @@ body {
     height: 190px;
     border: none;
     transition: ease-in-out .1s all; }
-    #landing-lgef .content .card:hover {
-      transform: scale(1.25); }
-      #landing-lgef .content .card:hover img {
-        transform: scale(1.25); }
     @media only screen and (min-width: 1901px) {
       #landing-lgef .content .card {
         width: 260px;
@@ -268,7 +264,7 @@ body {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -278,15 +274,18 @@ body {
       flex-direction: column;
       padding: 15px 50px; } }
   #landing-lgef .footer-lgef .left img {
-    width: 240px; }
+    width: 240px;
+    margin-right: 20px; }
     @media only screen and (min-width: 1901px) {
       #landing-lgef .footer-lgef .left img {
         width: 260px; } }
     @media only screen and (min-width: 1025px) and (max-width: 1382px) {
       #landing-lgef .footer-lgef .left img {
-        width: 240px; } }
+        width: 240px;
+        margin-right: 20px; } }
     @media only screen and (max-width: 1024px) {
       #landing-lgef .footer-lgef .left img {
+        margin-right: 0px;
         margin-bottom: 20px; } }
   #landing-lgef .footer-lgef p {
     font-family: Source Sans Pro;
