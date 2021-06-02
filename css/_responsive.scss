@@ -27,7 +27,7 @@ $mq-full-hd				: 1900px !default;
 // Everything up to and including the portrait width of the phone
 // Since it's the smallest query it doesn't need a min
 @mixin mobile-portrait-only {
-	@media (max-width : $mq-mobile-portrait) {
+	@media (max-width : $mq-mobile-portrait - 1) {
 		@content;
 	}
 }
@@ -70,7 +70,7 @@ $mq-full-hd				: 1900px !default;
 // Both the portrait and landscape width of the tablet
 // Larger than a landscape mobile but less than or equal to a landscape tablet
 @mixin tablet-only {
-	@media only screen and (min-width : $mq-mobile-landscape + 1) and (max-width : $mq-tablet-landscape) {
+	@media only screen and (min-width : $mq-mobile-landscape + 1) and (max-width : $mq-tablet-landscape - 1) {
 		@content;
 	}
 }
@@ -105,7 +105,7 @@ $mq-full-hd				: 1900px !default;
 
 // Up to and including the tablet landscape
 @mixin tablet-landscape-and-below {
-	@media only screen and (max-width : $mq-tablet-landscape) {
+	@media only screen and (max-width : $mq-tablet-landscape - 1) {
 		@content;
 	}
 }

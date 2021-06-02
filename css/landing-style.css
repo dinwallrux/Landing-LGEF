@@ -10,12 +10,21 @@ body {
   text-align: center;
   width: 100%;
   min-height: 100vh; }
+  @media only screen and (max-width: 1382px) {
+    .wrap-content {
+      padding-bottom: 10%; } }
   @media only screen and (min-width: 1025px) and (max-width: 1382px) {
     .wrap-content {
       min-height: 100vh; } }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     .wrap-content {
-      padding-bottom: 60%; } }
+      padding-bottom: 50%; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .wrap-content {
+      padding-bottom: 35%; } }
+  @media (max-width: 319px) {
+    .wrap-content {
+      padding-bottom: 70%; } }
 
 #landing-lgef .title {
   display: flex;
@@ -25,15 +34,18 @@ body {
   @media only screen and (min-width: 1901px) {
     #landing-lgef .title {
       padding: 60px 0 30px; } }
+  @media only screen and (max-width: 1382px) {
+    #landing-lgef .title {
+      padding: 20px 15%; } }
   @media only screen and (min-width: 1025px) and (max-width: 1382px) {
     #landing-lgef .title {
       padding: 20px 0 5px; } }
-  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
     #landing-lgef .title {
-      padding: 10px 20px; } }
+      padding: 30px 10%; } }
   @media only screen and (max-width: 480px) {
     #landing-lgef .title {
-      padding: 30px 40px;
+      padding: 20px 30px;
       box-sizing: border-box; } }
   #landing-lgef .title img {
     width: 125px;
@@ -61,45 +73,113 @@ body {
     #landing-lgef h1 {
       font-size: 52px;
       line-height: 52px; } }
+  @media only screen and (max-width: 1382px) {
+    #landing-lgef h1 {
+      font-size: 38px;
+      line-height: 40px; } }
   @media only screen and (min-width: 1025px) and (max-width: 1382px) {
     #landing-lgef h1 {
       font-size: 45px;
       line-height: 45px; } }
-  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
     #landing-lgef h1 {
-      font-size: 38px;
-      line-height: 44px; } }
+      font-size: 34px;
+      line-height: 40px; } }
   @media only screen and (max-width: 480px) {
     #landing-lgef h1 {
       font-size: 16px;
       line-height: 22px;
       margin: 0; } }
-  @media (max-width: 320px) {
+  @media (max-width: 319px) {
     #landing-lgef h1 {
-      font-size: 13px;
-      line-height: 18px; } }
+      font-size: 17px;
+      line-height: 21px; } }
 #landing-lgef .content {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   padding-bottom: 15px; }
   @media only screen and (min-width: 1901px) {
     #landing-lgef .content {
       padding-bottom: 40px; } }
+  @media only screen and (max-width: 1382px) {
+    #landing-lgef .content {
+      width: 70%;
+      margin: auto;
+      align-items: center;
+      flex-direction: column; } }
   @media only screen and (min-width: 1025px) and (max-width: 1382px) {
     #landing-lgef .content {
+      width: 100%;
+      margin: auto;
+      align-items: flex-end;
+      flex-direction: row;
       padding-bottom: 15px; } }
-  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
     #landing-lgef .content {
       flex-direction: column;
-      width: 540px;
+      align-items: center;
+      width: 80%;
       margin: auto; } }
   @media only screen and (max-width: 480px) {
     #landing-lgef .content {
       flex-direction: column;
       width: 80%;
       margin: auto; } }
+  @media only screen and (max-width: 1382px) {
+    #landing-lgef .content .left {
+      width: 100%; } }
+  @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+    #landing-lgef .content .left {
+      width: auto; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    #landing-lgef .content .left {
+      width: 100%; } }
+  #landing-lgef .content .left img {
+    height: 400px;
+    margin-right: 30px; }
+    @media only screen and (max-width: 1382px) {
+      #landing-lgef .content .left img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+      #landing-lgef .content .left img {
+        width: auto;
+        height: 400px;
+        margin-right: 30px;
+        margin-bottom: 0px; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+      #landing-lgef .content .left img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 480px) {
+      #landing-lgef .content .left img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px; } }
+  #landing-lgef .content .right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 490px; }
+    @media only screen and (max-width: 1382px) {
+      #landing-lgef .content .right {
+        width: 100%; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+      #landing-lgef .content .right {
+        width: 490px; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+      #landing-lgef .content .right {
+        width: 100%; } }
+    @media only screen and (max-width: 480px) {
+      #landing-lgef .content .right {
+        width: 100%; } }
   #landing-lgef .content > img {
     width: 470px; }
     @media only screen and (min-width: 1901px) {
@@ -108,7 +188,7 @@ body {
     @media only screen and (min-width: 1025px) and (max-width: 1382px) {
       #landing-lgef .content > img {
         width: 470px; } }
-    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
       #landing-lgef .content > img {
         margin-bottom: 35px; } }
     @media only screen and (max-width: 480px) {
@@ -125,89 +205,175 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 230px;
-    height: 190px;
+    width: 215px;
+    height: 164px;
     border: none;
-    transition: ease-in-out .1s all; }
+    transition: ease-in-out .1s all;
+    margin-right: 20px;
+    margin-bottom: 18px;
+    border: 5px solid #F8F8F8; }
+    #landing-lgef .content .card:nth-last-of-type(2n+2) {
+      margin-right: 0px; }
+    #landing-lgef .content .card:nth-last-of-type(1) {
+      margin-bottom: 3px; }
     @media only screen and (min-width: 1901px) {
       #landing-lgef .content .card {
-        width: 260px;
-        height: 200px; } }
+        width: 215px;
+        height: 164px; } }
+    @media only screen and (max-width: 1382px) {
+      #landing-lgef .content .card {
+        width: 338px;
+        height: 230px; } }
     @media only screen and (min-width: 1025px) and (max-width: 1382px) {
       #landing-lgef .content .card {
-        width: 230px;
-        height: 190px; } }
-    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+        width: 215px;
+        height: 164px; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
       #landing-lgef .content .card {
-        width: 100%;
         margin-left: 0 !important;
-        margin-right: 0 !important;
-        flex-direction: row;
+        margin-right: 0;
         justify-content: flex-start;
-        padding: 20px 60px;
-        box-sizing: border-box; } }
+        flex-direction: row;
+        padding: 30px 60px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 230px; }
+        #landing-lgef .content .card:nth-last-of-type(1) {
+          margin-bottom: 20px; } }
     @media only screen and (max-width: 480px) {
       #landing-lgef .content .card {
         width: 100%;
+        height: 130px;
         margin-left: 0 !important;
         margin-right: 0 !important;
         flex-direction: row;
         justify-content: flex-start;
-        padding: 25px 30px;
-        box-sizing: border-box;
-        height: auto; } }
+        padding: 25px 20px;
+        box-sizing: border-box; }
+        #landing-lgef .content .card:nth-last-of-type(1) {
+          margin-bottom: 18px; } }
     #landing-lgef .content .card img {
       width: 90px;
       transition: ease-in-out .3s all; }
+      @media only screen and (max-width: 1382px) {
+        #landing-lgef .content .card img {
+          width: 110px;
+          height: 120px;
+          object-fit: contain;
+          object-position: center; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+        #landing-lgef .content .card img {
+          width: 90px;
+          height: 90px;
+          object-fit: contain;
+          object-position: center; } }
+      @media only screen and (min-width: 481px) and (max-width: 1023px) {
+        #landing-lgef .content .card img {
+          width: 115px;
+          height: 150px;
+          object-fit: contain;
+          object-position: center; } }
       @media only screen and (max-width: 480px) {
         #landing-lgef .content .card img {
-          width: 70px; } }
-    #landing-lgef .content .card#lgef-button {
-      position: absolute;
-      top: 35px;
-      left: -610px;
-      right: 0;
-      margin: auto; }
-      @media only screen and (min-width: 1901px) {
-        #landing-lgef .content .card#lgef-button {
-          top: 42px;
-          left: -700px; } }
-      @media only screen and (min-width: 1025px) and (max-width: 1382px) {
-        #landing-lgef .content .card#lgef-button {
-          top: 35px;
-          left: -610px; } }
-      @media only screen and (min-width: 481px) and (max-width: 1024px) {
-        #landing-lgef .content .card#lgef-button {
-          position: static;
-          order: 1;
-          margin-bottom: 20px; } }
+          width: 80px;
+          height: 90px;
+          object-fit: contain;
+          object-position: center; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+      #landing-lgef .content .card#lgef-button {
+        order: 1;
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 480px) {
+      #landing-lgef .content .card#lgef-button {
+        order: 1;
+        margin-bottom: 20px; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+      #landing-lgef .content .card#actifoot-button {
+        order: 2; } }
+    @media only screen and (max-width: 480px) {
+      #landing-lgef .content .card#actifoot-button {
+        order: 2; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+      #landing-lgef .content .card#ir2f-button {
+        order: 3; } }
+    @media only screen and (max-width: 480px) {
+      #landing-lgef .content .card#ir2f-button {
+        order: 3; } }
+    #landing-lgef .content .card.social-icon {
+      padding-bottom: 0px;
+      background: transparent;
+      margin-right: 0px; }
+      @media only screen and (min-width: 481px) and (max-width: 1023px) {
+        #landing-lgef .content .card.social-icon {
+          order: 4;
+          margin-right: 0 !important;
+          flex-direction: column;
+          padding: 48px 50px; } }
       @media only screen and (max-width: 480px) {
-        #landing-lgef .content .card#lgef-button {
-          position: static;
-          order: 1;
-          margin-bottom: 20px; } }
-    #landing-lgef .content .card#actifoot-button {
-      position: absolute;
-      top: 90px;
-      left: 0;
-      right: -615px;
-      margin: auto; }
-      @media only screen and (min-width: 1901px) {
-        #landing-lgef .content .card#actifoot-button {
-          top: 110px;
-          right: -705px; } }
-      @media only screen and (min-width: 1025px) and (max-width: 1382px) {
-        #landing-lgef .content .card#actifoot-button {
-          top: 90px;
-          right: -615px; } }
-      @media only screen and (min-width: 481px) and (max-width: 1024px) {
-        #landing-lgef .content .card#actifoot-button {
-          position: static;
-          order: 2; } }
-      @media only screen and (max-width: 480px) {
-        #landing-lgef .content .card#actifoot-button {
-          position: static;
-          order: 2; } }
+        #landing-lgef .content .card.social-icon {
+          order: 4;
+          flex-direction: column;
+          padding: 25px 10px; } }
+      #landing-lgef .content .card.social-icon h3 {
+        width: 180px;
+        font-family: Source Sans Pro;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+        margin-bottom: 15px; }
+        @media only screen and (min-width: 481px) and (max-width: 1023px) {
+          #landing-lgef .content .card.social-icon h3 {
+            width: 100%;
+            font-size: 29px;
+            line-height: 35px;
+            margin-bottom: 40px; } }
+        @media only screen and (max-width: 480px) {
+          #landing-lgef .content .card.social-icon h3 {
+            width: 100%;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 25px; } }
+      #landing-lgef .content .card.social-icon ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 160px; }
+        @media only screen and (min-width: 481px) and (max-width: 1023px) {
+          #landing-lgef .content .card.social-icon ul {
+            width: 100%; } }
+        @media only screen and (max-width: 480px) {
+          #landing-lgef .content .card.social-icon ul {
+            width: 100%; } }
+        #landing-lgef .content .card.social-icon ul li {
+          margin: 0 20px 20px; }
+          #landing-lgef .content .card.social-icon ul li:nth-last-of-type(1) {
+            margin-bottom: 0; }
+          #landing-lgef .content .card.social-icon ul li:nth-last-of-type(2) {
+            margin-bottom: 0; }
+          @media only screen and (min-width: 481px) and (max-width: 1023px) {
+            #landing-lgef .content .card.social-icon ul li {
+              margin: 0 20px; } }
+          @media only screen and (max-width: 480px) {
+            #landing-lgef .content .card.social-icon ul li {
+              margin: 0 15px; } }
+          @media (max-width: 319px) {
+            #landing-lgef .content .card.social-icon ul li {
+              margin: 0 10px; } }
+        #landing-lgef .content .card.social-icon ul img {
+          width: 24px;
+          height: auto; }
+          @media only screen and (min-width: 481px) and (max-width: 1023px) {
+            #landing-lgef .content .card.social-icon ul img {
+              width: 40px;
+              height: auto; } }
     #landing-lgef .content .card p {
       font-family: Source Sans Pro;
       font-weight: bold;
@@ -218,44 +384,31 @@ body {
       color: #053287;
       margin: 0;
       margin-top: 15px; }
-      @media (max-width: 320px) {
+      @media only screen and (max-width: 1382px) {
+        #landing-lgef .content .card p {
+          font-size: 18px;
+          line-height: 20px; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1382px) {
+        #landing-lgef .content .card p {
+          font-size: 14px;
+          line-height: 18px; } }
+      @media only screen and (min-width: 481px) and (max-width: 1023px) {
+        #landing-lgef .content .card p {
+          font-size: 27px;
+          line-height: 30px;
+          text-align: left;
+          width: 60%;
+          margin-left: 60px;
+          margin-top: 0; } }
+      @media (max-width: 319px) {
         #landing-lgef .content .card p {
           font-size: 14px;
           line-height: 15px; } }
       @media only screen and (max-width: 480px) {
         #landing-lgef .content .card p {
           text-align: left;
-          font-size: 18px;
-          line-height: 19px;
           margin-left: 30px;
           margin-top: 0; } }
-      @media only screen and (min-width: 481px) and (max-width: 1024px) {
-        #landing-lgef .content .card p {
-          font-size: 31px;
-          line-height: 32px;
-          margin-left: 30px;
-          margin-top: 0; } }
-#landing-lgef .social-icon {
-  padding-bottom: 0px; }
-  #landing-lgef .social-icon h3 {
-    font-family: Source Sans Pro;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin: 0;
-    margin-bottom: 15px; }
-  #landing-lgef .social-icon ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-    #landing-lgef .social-icon ul li {
-      margin: 0 15px; }
 #landing-lgef .footer-lgef {
   width: 100%;
   background-color: #fff;
@@ -269,7 +422,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     #landing-lgef .footer-lgef {
       flex-direction: column;
       padding: 15px 50px; } }
@@ -283,10 +436,13 @@ body {
       #landing-lgef .footer-lgef .left img {
         width: 240px;
         margin-right: 20px; } }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1023px) {
       #landing-lgef .footer-lgef .left img {
         margin-right: 0px;
         margin-bottom: 20px; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+      #landing-lgef .footer-lgef .left img {
+        width: 300px; } }
   #landing-lgef .footer-lgef p {
     font-family: Source Sans Pro;
     font-weight: normal;
@@ -303,6 +459,11 @@ body {
       #landing-lgef .footer-lgef p {
         font-size: 18px;
         line-height: 20px; } }
+    @media only screen and (min-width: 481px) and (max-width: 1023px) {
+      #landing-lgef .footer-lgef p {
+        font-size: 24px;
+        line-height: 26px;
+        padding: 10px 0; } }
     #landing-lgef .footer-lgef p a {
       text-decoration: underline;
       color: #1f8efa; }
